@@ -1,0 +1,16 @@
+﻿<Window x:Class="tree_manager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:view="clr-namespace:tree_manager.view"
+        xmlns:tree_manager="clr-namespace:tree_manager.viewModel"
+        MinHeight="450" MinWidth="750"
+        Height="450" Width="750"
+        Title="Converter">
+
+    <Window.DataContext>
+        <tree_manager:ViewModelController/>
+    </Window.DataContext>
+
+    <view:MainView/>
+
+</Window>

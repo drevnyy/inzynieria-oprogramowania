@@ -1,0 +1,104 @@
+﻿<UserControl x:Class="tree_manager.view.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:tree_manager="clr-namespace:tree_manager"
+             mc:Ignorable="d" 
+ MinHeight="400" MinWidth="700" Height="auto" Width="auto">
+
+    <UserControl.InputBindings>
+        <KeyBinding Key="Enter" Command="{Binding ExecuteButtonClick}"/>
+    </UserControl.InputBindings>
+
+    <Grid Margin="0,0,0,0" MinHeight="350">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="350"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="172*"/>
+                <RowDefinition Height="143*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="45"/>
+
+            </Grid.RowDefinitions>
+
+            <DataGrid ItemsSource="{Binding VirtualList}"  Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch"  Margin="0,10,0,50" VerticalAlignment="Stretch" Height="auto" Width="auto"  
+                        tree_manager:DataGridColumnsBehavior.BindableColumns="{Binding Columns}"
+                      RowBackground="#F0F0F0"
+                      AlternatingRowBackground="#C0EFFF"
+                      EnableColumnVirtualization="True"
+                      VirtualizingStackPanel.IsVirtualizing="True"
+                EnableRowVirtualization="True" Grid.RowSpan="2"/>
+            <Button Content="Previous" Command="{Binding PreviousButtonClick}" IsEnabled="{Binding IsPreviousButtonActive, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="10,0,0,10" Grid.Row="3" VerticalAlignment="Bottom" Width="75"  Height="20"/>
+            <Button Content="Next" Command="{Binding NextButtonClick}" IsEnabled="{Binding IsNextButtonActive, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" Margin="0,0,10,10" Grid.Row="3" VerticalAlignment="Bottom" Width="75"  Height="20"/>
+            <Label Content="Wczytane rzędy" HorizontalAlignment="Right" Margin="0,10,60,0" Grid.Row="2" VerticalAlignment="Stretch"/>
+            <TextBox  HorizontalAlignment="Right" Height="Auto" PreviewTextInput="PreviewTextInput" Margin="0,15,10,0" Grid.Row="2"  Text="{Binding RecordsOnScreen, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="44" >
+                <TextBox.InputBindings >
+                    <KeyBinding Key="Enter"  Command="{Binding SizeChanged}"/>
+                </TextBox.InputBindings>
+            </TextBox>
+            <Label Content="{Binding CurrentIndex}" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Stretch"/>
+            <Label Content="Ilość pasujących elementów:" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Stretch"/>
+            <Label Content="{Binding RecordsCached}" HorizontalAlignment="Left" Margin="170,10,0,0" Grid.Row="2" VerticalAlignment="Stretch"/>
+        </Grid>
+        <Grid Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition/>
+                <RowDefinition Height="58"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="3" >
+                <TabControl Grid.Column="0" >
+                    <TabItem Header="szukajka">
+                        <Grid>
+                            <TextBox Height="23" PreviewTextInput="PreviewTextInput" Text="{Binding FromAge, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Margin="46,39,238,103" />
+                            <Label Content="Wiek" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                            <Label Content="Od" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,39,0,0"/>
+                            <Label Content="Do" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="86,39,0,0"/>
+                            <TextBox Height="23" PreviewTextInput="PreviewTextInput" Text="{Binding ToAge, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Margin="111,39,173,103" />
+
+                            <TextBox Height="23" Text="{Binding SName, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Margin="20,101,173,41" />
+                            <Label Content="Nazwa" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
+                            <Label Content="Nazwa Choroby" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="156,10,0,0"/>
+                            <Label Content="Gatunek" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="156,78,0,0" RenderTransformOrigin="0.387,2.974"/>
+                            <TextBox Height="23" Text="{Binding SIllName, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Margin="188,42,21,100" RenderTransformOrigin="0.45,1.884" />
+                            <TextBox Height="23" Text="{Binding SSpecie, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Margin="188,104,21,38" RenderTransformOrigin="0.45,1.884" />
+                            <Button Grid.Row="1" IsEnabled="{Binding IsExecuteButtonActive, UpdateSourceTrigger=PropertyChanged}" Content="Execute" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Command="{Binding SearchButtonClick}" Margin="0,0,0,0" Width="109"  Height="25"/>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="wpisywajka">
+
+                    </TabItem>
+                    <TabItem Header="raw SQL">
+                        <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="30"/>
+                            </Grid.RowDefinitions>
+                            <TextBox Grid.Row="0" Text="{Binding Query, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" AcceptsReturn="True"/>
+                            <Button Grid.Row="1" IsEnabled="{Binding IsExecuteButtonActive, UpdateSourceTrigger=PropertyChanged}" Content="Execute" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Command="{Binding ExecuteButtonClick}" Margin="0,0,0,0" Width="109"  Height="25"/>
+                        </Grid>
+                    </TabItem>
+
+
+                </TabControl>
+            </Grid>
+            <Button IsEnabled="{Binding IsCancelButtonActive, UpdateSourceTrigger=PropertyChanged}" Grid.Row="4" Content="Stop" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Command="{Binding CancelButtonClick}" Margin="0,0,10,10" Width="80"  Height="25"/>
+
+            <Label Grid.Row="2" Content="Wyszukaj:" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Bottom" Height="26" Width="91" />
+
+        </Grid>
+
+
+    </Grid>
+
+</UserControl>
