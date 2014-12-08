@@ -1,0 +1,26 @@
+﻿using System;
+using System.Data;
+
+
+namespace SendManager
+{
+    public interface ISender
+    {
+<<<<<<< HEAD
+        DataTable SendQuery(Type[] types,string connectionString, string query, int start, int range);
+
+        int Check10DataRowsSize(Type[] types, string connectionString, string query);
+=======
+       //[CR][AM] "Querry" pisze się przez jedno "r" (literówka występuje w przynajmniej kilku miejscach w solucji, Ctrl+Shift+F twierdzi, że 52)
+        DataTable SendQuerry<T, TS>(string connectionString, string query, int start, int range)
+            where TS : DbDataAdapter, new()
+            where T : IDbConnection, new();
+
+       //[CR][AM] Czemu metoda "Check" zwraca coś innego niż bool? Co w ogóle oznacza ta nazwa?
+        int Check10DataRowsSize<T, TS>(string connectionString, string query)
+            where TS : DbDataAdapter, new()
+            where T : IDbConnection, new();
+>>>>>>> 9f3ef11e7ff554f38273a7eba6a09790320dd7de
+
+    }
+}

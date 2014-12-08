@@ -1,0 +1,1 @@
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\Sender\bin\Debug\Sender.exe.config

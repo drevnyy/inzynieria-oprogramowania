@@ -1,0 +1,23 @@
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\Debug\SendManager.dll.config
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\Debug\SendManager.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\Debug\SendManager.pdb
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\Debug\IBM.Data.DB2.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\Debug\log4net.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\Debug\IBM.Data.U2.Ucinet.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\Debug\log4net.xml
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\obj\Debug\SendManager.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\obj\Debug\SendManager.pdb
+C:\Users\Zenek\Desktop\SqlCommandGenerator\SendManager\bin\Debug\SendManager.dll.config
+C:\Users\Zenek\Desktop\SqlCommandGenerator\SendManager\bin\Debug\SendManager.dll
+C:\Users\Zenek\Desktop\SqlCommandGenerator\SendManager\bin\Debug\SendManager.pdb
+C:\Users\Zenek\Desktop\SqlCommandGenerator\SendManager\bin\Debug\log4net.dll
+C:\Users\Zenek\Desktop\SqlCommandGenerator\SendManager\bin\Debug\IBM.Data.U2.Ucinet.dll
+C:\Users\Zenek\Desktop\SqlCommandGenerator\SendManager\bin\Debug\log4net.xml
+C:\Users\Zenek\Desktop\SqlCommandGenerator\SendManager\obj\Debug\DataAccesLayer.csprojResolveAssemblyReference.cache
+C:\Users\Zenek\Desktop\SqlCommandGenerator\SendManager\obj\Debug\SendManager.dll
+C:\Users\Zenek\Desktop\SqlCommandGenerator\SendManager\obj\Debug\SendManager.pdb
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\SendManager\bin\Debug\SendManager.dll.config
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\SendManager\bin\Debug\SendManager.dll
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\SendManager\bin\Debug\SendManager.pdb
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\SendManager\obj\Debug\SendManager.dll
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\SendManager\obj\Debug\SendManager.pdb

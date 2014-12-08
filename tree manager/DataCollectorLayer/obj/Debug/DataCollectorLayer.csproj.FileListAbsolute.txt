@@ -1,0 +1,28 @@
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\Debug\DataCollectorLayer.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\Debug\DataCollectorLayer.pdb
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\Debug\SendManager.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\Debug\SendManager.pdb
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\obj\Debug\DataCollectorLayer.csprojResolveAssemblyReference.cache
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\obj\Debug\DataCollectorLayer.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\obj\Debug\DataCollectorLayer.pdb
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\Debug\IBM.Data.DB2.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\Debug\IBM.Data.U2.Ucinet.dll
+C:\Users\Zenek\Desktop\SqlCommandGenerator\DataCollectorLayer\bin\Debug\DataCollectorLayer.dll.config
+C:\Users\Zenek\Desktop\SqlCommandGenerator\DataCollectorLayer\bin\Debug\DataCollectorLayer.dll
+C:\Users\Zenek\Desktop\SqlCommandGenerator\DataCollectorLayer\bin\Debug\DataCollectorLayer.pdb
+C:\Users\Zenek\Desktop\SqlCommandGenerator\DataCollectorLayer\bin\Debug\log4net.dll
+C:\Users\Zenek\Desktop\SqlCommandGenerator\DataCollectorLayer\bin\Debug\SendManager.dll
+C:\Users\Zenek\Desktop\SqlCommandGenerator\DataCollectorLayer\bin\Debug\IBM.Data.U2.Ucinet.dll
+C:\Users\Zenek\Desktop\SqlCommandGenerator\DataCollectorLayer\bin\Debug\SendManager.pdb
+C:\Users\Zenek\Desktop\SqlCommandGenerator\DataCollectorLayer\bin\Debug\log4net.xml
+C:\Users\Zenek\Desktop\SqlCommandGenerator\DataCollectorLayer\obj\Debug\DataCollectorLayer.csprojResolveAssemblyReference.cache
+C:\Users\Zenek\Desktop\SqlCommandGenerator\DataCollectorLayer\obj\Debug\DataCollectorLayer.dll
+C:\Users\Zenek\Desktop\SqlCommandGenerator\DataCollectorLayer\obj\Debug\DataCollectorLayer.pdb
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\DataCollectorLayer\bin\Debug\DataCollectorLayer.dll.config
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\DataCollectorLayer\bin\Debug\DataCollectorLayer.dll
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\DataCollectorLayer\bin\Debug\DataCollectorLayer.pdb
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\DataCollectorLayer\bin\Debug\SendManager.dll
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\DataCollectorLayer\bin\Debug\SendManager.pdb
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\DataCollectorLayer\obj\Debug\DataCollectorLayer.csprojResolveAssemblyReference.cache
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\DataCollectorLayer\obj\Debug\DataCollectorLayer.dll
+C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\DataCollectorLayer\obj\Debug\DataCollectorLayer.pdb

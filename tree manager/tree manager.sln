@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tree manager", "tree manage
 		{66D33C5F-E868-408A-9181-C94A41413323} = {66D33C5F-E868-408A-9181-C94A41413323}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCollectorLayer", "..\..\..\..\Desktop\SqlCommandGenerator\DataCollectorLayer\DataCollectorLayer.csproj", "{66D33C5F-E868-408A-9181-C94A41413323}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCollectorLayer", "DataCollectorLayer\DataCollectorLayer.csproj", "{66D33C5F-E868-408A-9181-C94A41413323}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccesLayer", "..\..\..\..\Desktop\SqlCommandGenerator\SendManager\DataAccesLayer.csproj", "{3ED4BA18-B9FA-4914-80F3-CC7D5F1B6DD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccesLayer", "SendManager\DataAccesLayer.csproj", "{3ED4BA18-B9FA-4914-80F3-CC7D5F1B6DD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

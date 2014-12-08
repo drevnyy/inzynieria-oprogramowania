@@ -1,0 +1,5 @@
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\Sender\bin\x86\Debug\Sender.dll.config
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\Sender\bin\x86\Debug\Sender.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\Sender\bin\x86\Debug\Sender.pdb
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\Sender\obj\x86\Debug\Sender.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\Sender\obj\x86\Debug\Sender.pdb

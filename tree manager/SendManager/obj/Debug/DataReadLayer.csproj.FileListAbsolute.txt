@@ -1,0 +1,5 @@
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\Debug\SendManager.dll.config
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\Debug\SendManager.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\Debug\SendManager.pdb
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\obj\Debug\SendManager.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\obj\Debug\SendManager.pdb

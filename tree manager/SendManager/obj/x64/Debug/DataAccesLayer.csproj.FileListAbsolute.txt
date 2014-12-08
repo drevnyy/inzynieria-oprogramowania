@@ -1,0 +1,6 @@
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\x64\Debug\SendManager.dll.config
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\x64\Debug\SendManager.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\bin\x64\Debug\SendManager.pdb
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\obj\x64\Debug\DataAccesLayer.csprojResolveAssemblyReference.cache
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\obj\x64\Debug\SendManager.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\SendManager\obj\x64\Debug\SendManager.pdb

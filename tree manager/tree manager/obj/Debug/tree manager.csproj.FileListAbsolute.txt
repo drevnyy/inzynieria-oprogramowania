@@ -1,23 +1,22 @@
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\tree manager.exe.config
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager.csprojResolveAssemblyReference.cache
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\MainWindow.baml
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\MainWindow.g.cs
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\view\MainView.g.cs
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\App.g.cs
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\GeneratedInternalTypeHelper.g.cs
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager_MarkupCompile.cache
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager_MarkupCompile.lref
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\tree manager.exe
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\tree manager.pdb
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\DataCollectorLayer.dll
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\SendManager.dll
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\log4net.dll
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\DataCollectorLayer.pdb
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\SendManager.pdb
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\log4net.xml
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\view\MainView.baml
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager.g.resources
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree_manager.Properties.Resources.resources
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager.csproj.GenerateResource.Cache
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager.exe
-c:\users\zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager.pdb
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\tree manager.exe.config
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\tree manager.exe
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\tree manager.pdb
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\DataCollectorLayer.dll
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\SendManager.dll
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\log4net.dll
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\DataCollectorLayer.pdb
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\bin\Debug\SendManager.pdb
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager.csprojResolveAssemblyReference.cache
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\MainWindow.g.cs
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\view\MainView.g.cs
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\App.g.cs
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager_MarkupCompile.cache
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager_MarkupCompile.lref
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\MainWindow.baml
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\view\MainView.baml
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager.g.resources
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree_manager.Properties.Resources.resources
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager.csproj.GenerateResource.Cache
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager.exe
+C:\Users\Zenek\documents\visual studio 2013\Projects\tree manager\tree manager\obj\Debug\tree manager.pdb

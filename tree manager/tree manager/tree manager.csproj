@@ -121,16 +121,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Desktop\SqlCommandGenerator\DataCollectorLayer\DataCollectorLayer.csproj">
-      <Project>{66d33c5f-e868-408a-9181-c94a41413323}</Project>
-      <Name>DataCollectorLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Desktop\SqlCommandGenerator\SendManager\DataAccesLayer.csproj">
-      <Project>{3ed4ba18-b9fa-4914-80f3-cc7d5f1b6dd8}</Project>
-      <Name>DataAccesLayer</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
@@ -149,6 +139,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataCollectorLayer\DataCollectorLayer.csproj">
+      <Project>{66d33c5f-e868-408a-9181-c94a41413323}</Project>
+      <Name>DataCollectorLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SendManager\DataAccesLayer.csproj">
+      <Project>{3ed4ba18-b9fa-4914-80f3-cc7d5f1b6dd8}</Project>
+      <Name>DataAccesLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

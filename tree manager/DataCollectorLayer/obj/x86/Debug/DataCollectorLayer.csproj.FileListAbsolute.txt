@@ -1,0 +1,10 @@
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\x86\Debug\DataCollectorLayer.dll.config
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\x86\Debug\DataCollectorLayer.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\x86\Debug\DataCollectorLayer.pdb
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\x86\Debug\log4net.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\x86\Debug\SendManager.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\x86\Debug\SendManager.pdb
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\bin\x86\Debug\log4net.xml
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\obj\x86\Debug\DataCollectorLayer.csprojResolveAssemblyReference.cache
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\obj\x86\Debug\DataCollectorLayer.dll
+C:\Users\mateusz.lucjanek\Source\Repos\Dział_Jawory\SqlCommandGenerator\DataCollectorLayer\obj\x86\Debug\DataCollectorLayer.pdb

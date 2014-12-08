@@ -7,7 +7,8 @@ using System.Windows.Input;
 using DataCollectorLayer;
 using SendManager;
 using tree_manager.Properties;
-
+using System.Linq;
+using System.Threading;
 namespace tree_manager.viewModel
 {
 
@@ -27,12 +28,12 @@ namespace tree_manager.viewModel
             _startFrom = 0;
             AmountOfRecordsInDatabase = 0;
             _oldRecordsOnScreen = RecordsOnScreen;
-            BackupData=new FileDumper(_maxChunkSize);
+            BackupData = new FileDumper(_maxChunkSize);
         }
 
         public int AmountOfRecordsInDatabase { get; set; }
         public IDataProvider DataReader { get; set; }
-        public IBackupData BackupData {get; set; }
+        public IBackupData BackupData { get; set; }
 
         private ObservableCollection<DataGridColumn> _columns = new ObservableCollection<DataGridColumn>();
         private bool _isExecuteButtonActive;
@@ -55,8 +56,77 @@ namespace tree_manager.viewModel
         private int _fromAge;
         private int _toAge;
 
+        string[] _virtualListSelectedRow = null;
 
         #region properties
+        public string SelectedItemSpecie
+        {
+            get
+            {
+                try
+                {
+                    return _virtualListSelectedRow[0];
+                }
+                catch (Exception e)
+                {
+                    return "";
+                }
+            }
+        }
+        public string SelectedItemName
+        {
+            get
+            {
+                try
+                {
+                    return _virtualListSelectedRow[1];
+                }
+                catch (Exception e)
+                {
+                    return "";
+                }
+            }
+        }
+        public string SelectedItemAge
+        {
+            get
+            {
+                try
+                {
+                    return _virtualListSelectedRow[2];
+                }
+                catch (Exception e)
+                {
+                    return "";
+                }
+            }
+        }
+        public string SelectedItemIllName
+        {
+            get
+            {
+                try
+                {
+                    return _virtualListSelectedRow[3];
+                }
+                catch (Exception e)
+                {
+                    return "";
+                }
+            }
+        }
+        public string[] VirtualListSelectedRow
+        {
+            get { return _virtualListSelectedRow; }
+            set
+            {
+                _virtualListSelectedRow = value;
+                RaisePropertyChangedEvent("SelectedItemName");
+                RaisePropertyChangedEvent("SelectedItemAge");
+                RaisePropertyChangedEvent("SelectedItemIllName");
+                RaisePropertyChangedEvent("SelectedItemSpecie");
+            }
+        }
         public string SSpecie
         {
             get { return _sSpecie; }
@@ -70,7 +140,7 @@ namespace tree_manager.viewModel
         public int ToAge
         {
             get { return _toAge; }
-            set {_toAge = value;}
+            set { _toAge = value; }
         }
         public string SName
         {
@@ -93,7 +163,7 @@ namespace tree_manager.viewModel
                     IsNextButtonActive = (_startFrom + _recordsOnScreen < AmountOfRecordsInDatabase);
                     SetIndex();
                 }
-                RaisePropertyChangedEvent(new PropertyChangedEventArgs("RecordsCached"));
+                RaisePropertyChangedEvent("RecordsCached");
             }
         }
 
@@ -226,8 +296,11 @@ namespace tree_manager.viewModel
 
         #endregion
         #region clicks
+        int i = 0;
         public void ExecuteButton_Click()
         {
+
+            //Query = "INSERT INTO trees VALUES ('" + (i % 2 == 0 ? "lipa" : "sosna") + "', '" + (i % 3 == 0 ? "bartek" : (i % 3 == 1 ? "nazwatestowa2" : "nazwatestowa3")) + "', " + i % 500 + ", '" + (i % 4 == 0 ? "cukrzyca" : (i % 4 == 1 ? "wzdęcia" : (i % 4 == 2 ? "grypa" : "zatoki"))) + "', 1." + i / 10 + ", 1." + i / 10 + ");";
             _isVirtualListEmpty = true;
             DisableButtons();
             AmountOfRecordsInDatabase = _startFrom = 0;
@@ -241,7 +314,7 @@ namespace tree_manager.viewModel
             DisableButtons();
             AmountOfRecordsInDatabase = _startFrom = 0;
             CurrentIndex = "Wczytywanie Danych";
-            GetData(new SelectList(FromAge,ToAge,SName,SIllName,SSpecie));
+            GetData(new SelectList(FromAge, ToAge, SName, SIllName, SSpecie));
 
         }
         public void NextButton_Click()
@@ -363,7 +436,7 @@ namespace tree_manager.viewModel
                 recordsToShow = RecordsOnScreen;
             else
                 recordsToShow = RecordsOnScreen > RecordsCached - _startFrom ? RecordsCached - _startFrom : RecordsOnScreen;
-            VirtualList = new VirtualizedPageGrid(_startFrom, DataReader, recordsToShow,BackupData );
+            VirtualList = new VirtualizedPageGrid(_startFrom, DataReader, recordsToShow, BackupData);
             _isVirtualListEmpty = false;
             SetButtons();
             Columns = _virtualList.GetColumns();
