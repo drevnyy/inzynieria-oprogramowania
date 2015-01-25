@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataCollectorLayer
 {
-    public static class Sqlparser
+    public class Sqlparser : IStringParser
     {
-        public static string Parse(SelectList list)
+        public string Parse(SelectList list)
         {
             string wiek="";
             if (list.ToAge > list.FromAge)

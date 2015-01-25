@@ -20,7 +20,7 @@ namespace tree_manager.viewModel
             _currentDriver = "System.Data.SqlClient";
             _isExecuteButtonActive = true;
             _maxChunkSize = Settings.Default.maxSize;
-            _connectionString = @"Server=MATEUSZ\SQLEXPRESS;Database=tree;Trusted_Connection=True;";
+            _connectionString = @Settings.Default.ConnectionString;//@"Server=MATEUSZ\SQLEXPRESS;Database=tree;Trusted_Connection=True;";
             var list = new List<string> { "SELECT * FROM [TreeList]" };
 
             CurrentIndex = "0-0";
@@ -406,7 +406,7 @@ namespace tree_manager.viewModel
                     return;
                 DataReader = new DataProvider(list,
                     new DbConnectionFactory().CreateDbConnection(_currentDriver, ConnectionString),
-                    BackupData, new DataFromDatabaseReader(), _maxChunkSize, _recordsOnScreen);
+                    BackupData, new DataFromDatabaseReader(), _maxChunkSize, _recordsOnScreen, new Sqlparser());
                 RunBackgroundReader();
 
             }

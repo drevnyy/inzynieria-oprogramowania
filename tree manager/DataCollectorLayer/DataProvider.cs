@@ -24,9 +24,9 @@ namespace DataCollectorLayer
                 _databaseAccess.OpenConnection(connection, query);
         }
         public DataProvider(SelectList list, IDbConnection con, IBackupData backupData,
-    IDataFromDatabaseReader databaseReader, int chunkSize, int recordsOnScreen)
+    IDataFromDatabaseReader databaseReader, int chunkSize, int recordsOnScreen,IStringParser parser)
         {
-            string query=Sqlparser.Parse(list);
+            string query=parser.Parse(list);
             _chunkSize = chunkSize;
             _recordsOnScreen = recordsOnScreen;
             _backupData = backupData;

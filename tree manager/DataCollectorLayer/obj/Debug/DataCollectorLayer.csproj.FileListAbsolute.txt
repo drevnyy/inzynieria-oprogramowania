@@ -26,3 +26,11 @@ C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\DataCollectorL
 C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\DataCollectorLayer\obj\Debug\DataCollectorLayer.csprojResolveAssemblyReference.cache
 C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\DataCollectorLayer\obj\Debug\DataCollectorLayer.dll
 C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\DataCollectorLayer\obj\Debug\DataCollectorLayer.pdb
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\DataCollectorLayer\bin\Debug\DataCollectorLayer.dll.config
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\DataCollectorLayer\bin\Debug\DataCollectorLayer.dll
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\DataCollectorLayer\bin\Debug\DataCollectorLayer.pdb
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\DataCollectorLayer\bin\Debug\SendManager.dll
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\DataCollectorLayer\bin\Debug\SendManager.pdb
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\DataCollectorLayer\obj\Debug\DataCollectorLayer.csprojResolveAssemblyReference.cache
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\DataCollectorLayer\obj\Debug\DataCollectorLayer.dll
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\DataCollectorLayer\obj\Debug\DataCollectorLayer.pdb

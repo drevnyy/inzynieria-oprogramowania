@@ -21,3 +21,9 @@ C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\SendManager\bi
 C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\SendManager\bin\Debug\SendManager.pdb
 C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\SendManager\obj\Debug\SendManager.dll
 C:\Users\Zenek\Documents\Visual Studio 2013\Projects\tree manager\SendManager\obj\Debug\SendManager.pdb
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\SendManager\bin\Debug\SendManager.dll.config
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\SendManager\bin\Debug\SendManager.dll
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\SendManager\bin\Debug\SendManager.pdb
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\SendManager\obj\Debug\DataAccesLayer.csprojResolveAssemblyReference.cache
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\SendManager\obj\Debug\SendManager.dll
+C:\Users\Zenek\Desktop\inzynieria-oprogramowania\tree manager\SendManager\obj\Debug\SendManager.pdb

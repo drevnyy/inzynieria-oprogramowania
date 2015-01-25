@@ -66,6 +66,7 @@
     <Compile Include="DataProvider.cs" />
     <Compile Include="DbConnectionFactory.cs" />
     <Compile Include="IDataProvider.cs" />
+    <Compile Include="IStringParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelectList.cs" />
     <Compile Include="Sqlparser.cs" />

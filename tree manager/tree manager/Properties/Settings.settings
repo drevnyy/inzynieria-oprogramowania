@@ -14,5 +14,8 @@
     <Setting Name="SqlStringsPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">c:\a</Value>
     </Setting>
+    <Setting Name="ConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server=MATEUSZ\SQLEXPRESS;Database=tree;Trusted_Connection=True;</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
