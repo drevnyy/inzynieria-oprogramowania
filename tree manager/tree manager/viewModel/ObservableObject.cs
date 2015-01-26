@@ -4,6 +4,9 @@ using System.Linq.Expressions;
 
 namespace tree_manager.viewModel
 {
+    /**
+     * klasa powiadamiająca xamla o zmianie wartości
+     */
     public class ObservableObject : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;

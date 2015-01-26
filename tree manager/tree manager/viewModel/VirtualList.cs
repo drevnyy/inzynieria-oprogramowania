@@ -10,6 +10,7 @@ namespace tree_manager.viewModel
     public class Page<T> : List<T>
     {
     }
+
     public abstract class VirtualList<T> : IList
     {
         public int PageSize { get; private set; }

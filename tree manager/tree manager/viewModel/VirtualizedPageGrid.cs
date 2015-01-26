@@ -8,7 +8,9 @@ using SendManager;
 namespace tree_manager.viewModel
 {
 
-
+    /**
+     * Lista DataGrid
+     */
     public class VirtualizedPageGrid : VirtualList<object[]>
     {
         private readonly IDataProvider _dataReader;

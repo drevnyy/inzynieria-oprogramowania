@@ -3,6 +3,7 @@ using System.Data.Common;
 
 namespace DataCollectorLayer
 {
+
     public class DbConnectionFactory
     {
         public DbConnection CreateDbConnection(string driver, string connectionString)

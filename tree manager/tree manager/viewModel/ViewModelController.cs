@@ -11,7 +11,9 @@ using System.Linq;
 using System.Threading;
 namespace tree_manager.viewModel
 {
-
+    /**
+     * klasa zarządzająca widokiem
+     */
     public class ViewModelController : ObservableObject
     {
 
@@ -115,6 +117,9 @@ namespace tree_manager.viewModel
                 }
             }
         }
+        /// <summary>
+        /// zwraca wybrany rząd i podnosi "changed property"
+        /// </summary>
         public string[] VirtualListSelectedRow
         {
             get { return _virtualListSelectedRow; }
@@ -152,6 +157,9 @@ namespace tree_manager.viewModel
             get { return _sIllName; }
             set { _sIllName = value; }
         }
+        /// <summary>
+        /// zwraca ilość rekordów zcatchowanych na dysku
+        /// </summary>
         public int RecordsCached
         {
             get { return AmountOfRecordsInDatabase; }
@@ -167,6 +175,9 @@ namespace tree_manager.viewModel
             }
         }
 
+        /// <summary>
+        /// lista kolumn
+        /// </summary>
         public ObservableCollection<DataGridColumn> Columns
         {
             get
@@ -177,9 +188,11 @@ namespace tree_manager.viewModel
             {
                 _columns = value;
                 RaisePropertyChangedEvent("Columns");
-
             }
         }
+       /// <summary>
+       /// datagrid content
+       /// </summary>
         public VirtualizedPageGrid VirtualList
         {
             get { return _virtualList; }
@@ -189,6 +202,9 @@ namespace tree_manager.viewModel
                 RaisePropertyChangedEvent("VirtualList");
             }
         }
+        /// <summary>
+        /// zapytanie wyciągające pierwszą listę
+        /// </summary>
         public string Query
         {
             get { return _currentQuery; }
@@ -202,7 +218,9 @@ namespace tree_manager.viewModel
         {
             get { return _connectionString; }
         }
-
+        /// <summary>
+        /// ilość rekordów na ekranie
+        /// </summary>
         public int RecordsOnScreen
         {
             get { return _recordsOnScreen; }
@@ -283,6 +301,9 @@ namespace tree_manager.viewModel
         {
             get { return new DelegateCommand(PreviousButton_Click); }
         }
+        /// <summary>
+        /// podnosi resize okna
+        /// </summary>
         public ICommand SizeChanged
         {
             get { return new DelegateCommand(Resize); }
@@ -300,7 +321,6 @@ namespace tree_manager.viewModel
         public void ExecuteButton_Click()
         {
 
-            //Query = "INSERT INTO trees VALUES ('" + (i % 2 == 0 ? "lipa" : "sosna") + "', '" + (i % 3 == 0 ? "bartek" : (i % 3 == 1 ? "nazwatestowa2" : "nazwatestowa3")) + "', " + i % 500 + ", '" + (i % 4 == 0 ? "cukrzyca" : (i % 4 == 1 ? "wzdęcia" : (i % 4 == 2 ? "grypa" : "zatoki"))) + "', 1." + i / 10 + ", 1." + i / 10 + ");";
             _isVirtualListEmpty = true;
             DisableButtons();
             AmountOfRecordsInDatabase = _startFrom = 0;
@@ -342,6 +362,9 @@ namespace tree_manager.viewModel
             }
         }
 
+        /// <summary>
+        /// ustala które buttony mogą być aktywne a które nie
+        /// </summary>
         private void SetButtons()
         {
             IsNextButtonActive = (_startFrom + _recordsOnScreen < AmountOfRecordsInDatabase);
@@ -351,6 +374,9 @@ namespace tree_manager.viewModel
             IsExecuteButtonActive = _backgroundDataReader == null || !_backgroundDataReader.IsBusy;
         }
 
+        /// <summary>
+        /// wyświetla index listy
+        /// </summary>
         private void SetIndex()
         {
             if (_virtualList != null)
@@ -360,6 +386,9 @@ namespace tree_manager.viewModel
                                    : RecordsOnScreen));
         }
 
+        /// <summary>
+        /// wyłącza przyciski
+        /// </summary>
         private void DisableButtons()
         {
             IsNextButtonActive = false;
@@ -367,6 +396,9 @@ namespace tree_manager.viewModel
             IsExecuteButtonActive = false;
         }
 
+        /// <summary>
+        /// odświeża listę widocznych elementów listy
+        /// </summary>
         public void Resize()
         {
             if (_oldRecordsOnScreen != RecordsOnScreen && VirtualList != null)
@@ -379,7 +411,9 @@ namespace tree_manager.viewModel
         }
         #endregion
 
-
+        /// <summary>
+        /// próbuje pobrać wszystkie obiekty z tablicy
+        /// </summary>
         private void GetData()
         {
             try
@@ -398,6 +432,10 @@ namespace tree_manager.viewModel
                 IsExecuteButtonActive = true;
             }
         }
+        /// <summary>
+        /// pobiera listę z określonymi kryteriami wyszukiwania
+        /// </summary>
+        /// <param name="list"></param>
         private void GetData(SelectList list)
         {
             try
@@ -416,6 +454,7 @@ namespace tree_manager.viewModel
                 IsExecuteButtonActive = true;
             }
         }
+        
         protected void UpdateData()
         {
             try
@@ -429,6 +468,9 @@ namespace tree_manager.viewModel
                 throw;
             }
         }
+        /// <summary>
+        /// resetuje datagrid
+        /// </summary>
         private void StartVirtualList()
         {
             int recordsToShow;
@@ -443,10 +485,16 @@ namespace tree_manager.viewModel
         }
 
         #region backgrounreader
+        /// <summary>
+        /// przerywa backgroundreadera
+        /// </summary>
         private void CancelReading()
         {
             BoolCancelReading();
         }
+        /// <summary>
+        /// przerywa backgroundreadera
+        /// </summary>
         private bool BoolCancelReading()
         {
             if (_backgroundDataReader != null && _backgroundDataReader.IsBusy)
@@ -457,7 +505,9 @@ namespace tree_manager.viewModel
             }
             return false;
         }
-
+        /// <summary>
+        /// uruchamia backgroundreadera do pobierania danych
+        /// </summary>
         private void RunBackgroundReader()
         {
             _backgroundDataReader = new BackgroundWorker
@@ -470,13 +520,18 @@ namespace tree_manager.viewModel
             _backgroundDataReader.RunWorkerCompleted += BackgroundWorkerCompleated;
             _backgroundDataReader.RunWorkerAsync();
         }
-
+        /// <summary>
+        /// informuje o postępie backgroundreadera
+        /// </summary>
         private void BackgroundWorkerProgress(object sender, ProgressChangedEventArgs e)
         {
             if (_isVirtualListEmpty && AmountOfRecordsInDatabase > 0)
                 StartVirtualList();
             RecordsCached = e.ProgressPercentage;
         }
+        /// <summary>
+        /// zamyka backgroundreadera
+        /// </summary>
         private void BackgroundWorkerCompleated(object sender, RunWorkerCompletedEventArgs e)
         {
             if (_isVirtualListEmpty && AmountOfRecordsInDatabase > 0)

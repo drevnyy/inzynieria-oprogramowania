@@ -8,6 +8,11 @@ namespace DataCollectorLayer
 {
     public class Sqlparser : IStringParser
     {
+        /// <summary>
+        /// parsuje parametry na SqlString
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns></returns>
         public string Parse(SelectList list)
         {
             string wiek="";

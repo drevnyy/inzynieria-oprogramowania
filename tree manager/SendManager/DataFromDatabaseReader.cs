@@ -17,7 +17,11 @@ namespace SendManager
         {
             _isOpen = false;
         }
-
+        /// <summary>
+        /// otwiera połączenie
+        /// </summary>
+        /// <param name="connection"></param>
+        /// <param name="query"></param>
         public void OpenConnection(DbConnection connection, string query)
         {
             if (string.IsNullOrEmpty(query))
@@ -34,7 +38,10 @@ namespace SendManager
                     _isOpen = true;
             }
         }
-
+        /// <summary>
+        /// pobiera nagłówek
+        /// </summary>
+        /// <returns></returns>
         public string[] GetHeader()
         {
             var headers = new List<String>();
@@ -46,8 +53,6 @@ namespace SendManager
 
                     for (int i = 0; i < fieldCount; i++)
                     {
-                        // pobiera nazwę, gdy nazwa już istnieje na liście tworzy jej przeładowanie dodając index
-                        // np adres, adres2
                         string name = _dbReader.GetName(i);
                         var overloadedName = GetOverloadedName(name, headers);
 
@@ -68,7 +73,12 @@ namespace SendManager
             }
             return headers.ToArray();
         }
-
+    /// <summary>
+    /// zwraca unikatową nazwę headera (konieczne przy joinach)
+    /// </summary>
+    /// <param name="name"></param>
+    /// <param name="headers"></param>
+    /// <returns></returns>
         private static string GetOverloadedName(string name, List<string> headers)
         {
             int nameMultipler = 0;
@@ -82,6 +92,13 @@ namespace SendManager
         }
 
         private int _chunkSize;
+        /// <summary>
+        /// pobiera dane i zapisuje je do pliku
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// <param name="chunkSize"></param>
+        /// <param name="amountOfRecordsToGet"></param>
         public void ReadData(object sender, DoWorkEventArgs e,int chunkSize, int amountOfRecordsToGet)
         {
             var worker = sender as BackgroundWorker;

@@ -25,7 +25,11 @@ namespace tree_manager.view
         {
             e.Handled = !IsTextAllowed(e.Text);
         }
-
+        /// <summary>
+        /// blokuje znaki niecyfrowe w rozmiarze indeksu
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
         private bool IsTextAllowed(string text)
         {
             {

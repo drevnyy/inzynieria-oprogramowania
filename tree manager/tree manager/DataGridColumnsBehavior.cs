@@ -5,6 +5,9 @@ using System.Windows.Controls;
 
 namespace tree_manager
 {
+    /**
+     * klasa wirtualizuj¹ca grid
+     */
     public class DataGridColumnsBehavior
     {
         public static readonly DependencyProperty BindableColumnsProperty =

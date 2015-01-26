@@ -5,7 +5,9 @@ using System.Linq;
 
 namespace SendManager
 {
-
+    /**
+     * cache danych na dysku
+     */
     public class FileDumper : IBackupData
     {
 
@@ -44,12 +46,21 @@ namespace SendManager
             }
 
         }
-
+        /// <summary>
+        /// zwraca indeks pliku z którego mamy pobrać dane
+        /// </summary>
+        /// <param name="startFrom"></param>
+        /// <returns></returns>
         private int GetNewFileIndex(int startFrom)
         {
             return (startFrom - (startFrom % _bufferSize)) + ((startFrom % _bufferSize) > 0 ? _bufferSize : 0);
         }
-
+        /// <summary>
+        /// pobiera określone dane z pliku
+        /// </summary>
+        /// <param name="startFrom"></param>
+        /// <param name="pageSize"></param>
+        /// <returns></returns>
         public DataGrid GetData(int startFrom, int pageSize)
         {
             int wantedFileBuffer = BufferIndexOfRecordChunk(startFrom + 1);
